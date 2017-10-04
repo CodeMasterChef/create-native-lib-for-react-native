@@ -4,7 +4,7 @@
 >  -- said by me 😜
 
 # About create-native-lib-for-react
-This is instruction for creating a **Android** native library for React Native. For Vietnamese, click [here](https://github.com/gitvani/create-native-lib-for-react/blob/master/readme.vi.md) .
+📋 This is instruction for creating a **Android** native library for React Native. For Vietnamese, click [here](https://github.com/gitvani/create-native-lib-for-react/blob/master/readme.vi.md) .
 
 
 # Step 1: Create a library
@@ -111,7 +111,7 @@ import com.reactlibrary.RNMyFancyLibraryPackage;
       );
     }
 ```
-**IMPORTANT**: The only problem is that the generator we are using can not make the necessary changes in the android/app/build.gradle file, **so we have to do it manually:**
+😱 **IMPORTANT**: The only problem is that the generator we are using can not make the necessary changes in the android/app/build.gradle file, **so we have to do it manually:**
 ```
 dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
