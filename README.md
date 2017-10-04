@@ -81,13 +81,13 @@ Create a repository and push it up normally. For example, I have uploaded at htt
 
 # Step 3: Install the library into React Native:
 
-1. **Install from the gitgub link in step 2.**
+## 1. Install from the gitgub link in step 2:
 
 For example:
 
     npm install --save git+https://github.com/gitvani/ReactNativeMyFancyLibrary 
 
-2. **Link library:**
+## 2. Link library:
 
 Use the command:
 
@@ -111,7 +111,7 @@ import com.reactlibrary.RNMyFancyLibraryPackage;
       );
     }
 ```
-The only problem is that the generator we are using can not make the necessary changes in the android / app / build.gradle file, **so we have to do it manually:**
+**IMPORTANT**: The only problem is that the generator we are using can not make the necessary changes in the android/app/build.gradle file, **so we have to do it manually:**
 ```
 dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
