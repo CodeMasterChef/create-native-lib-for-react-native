@@ -1,6 +1,12 @@
 
 ![enter image description here](https://i.imgur.com/FCgIKGa.jpg)
 
+> If you don't current libraries, you can create them by yourself with React Native 
+>  -- said by me 😜
+
+# Về create-native-lib-for-react
+Đây là hướng dẫn để tạo thư viện **Android** native cho React Native.
+
 # Bước 1: Tạo thư viện
 Sử dụng generator để tạo thư viện: [react-native-create-library](https://github.com/frostney/react-native-create-library)
 Cài đặt generator với lệnh: 
@@ -21,7 +27,11 @@ Hai tập tin quan trọng nhất đó là RNMyFancyLibraryModule.java (chứa t
       return Collections.emptyList();
      }
 ```
-Để thêm phần xử lí native, ta cần thay đổi nội dung tập tin RNMyFancyLibraryModule.java . Ví dụ: tôi cần tạo một thư viện cho React Native sử dụng `android.widget.Toast` để hiện thị toast. Tôi chỉnh sửa tập tin RNMyFancyLibraryModule.java  như sau(tham khảo toàn bộ code tại  [đây](https://github.com/gitvani/ReactNativeMyFancyLibrary/blob/master/android/src/main/java/com/reactlibrary/RNMyFancyLibraryModule.java) ): 
+Để thêm phần xử lí native, ta cần thay đổi nội dung tập tin RNMyFancyLibraryModule.java . Ví dụ: tôi cần tạo một thư viện cho React Native sử dụng `android.widget.Toast` để hiện thị toast. 
+
+![demo](https://i.imgur.com/C46pYvv.gif)
+
+Tôi chỉnh sửa tập tin RNMyFancyLibraryModule.java như sau (tham khảo toàn bộ code tại  [đây](https://github.com/gitvani/ReactNativeMyFancyLibrary/blob/master/android/src/main/java/com/reactlibrary/RNMyFancyLibraryModule.java) ): 
 ```java
 import android.widget.Toast;
 
