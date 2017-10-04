@@ -1,4 +1,6 @@
 
+![enter image description here](https://i.imgur.com/FCgIKGa.jpg)
+
 # Bước 1: Tạo thư viện
 Sử dụng generator để tạo thư viện: [react-native-create-library](https://github.com/frostney/react-native-create-library)
 Cài đặt generator với lệnh: 
