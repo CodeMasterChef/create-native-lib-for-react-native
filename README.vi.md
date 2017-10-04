@@ -5,7 +5,7 @@
 >  -- said by me 😜
 
 # Về create-native-lib-for-react
-Đây là hướng dẫn để tạo thư viện **Android** native cho React Native.
+📋 Đây là hướng dẫn để tạo thư viện **Android** native cho React Native.
 
 # Bước 1: Tạo thư viện
 Sử dụng generator để tạo thư viện: [react-native-create-library](https://github.com/frostney/react-native-create-library)
@@ -101,7 +101,7 @@ import com.reactlibrary.RNMyFancyLibraryPackage;
       );
     }
 ```
-Một vấn đề duy nhất đó là generator mà ta đang dùng không thể tạo thay đổi cần thiết trong tập tin **android/app/build.gradle,** do đó ta phải tự làm một cách thủ công:
+😱 **LƯU Ý**: Một vấn đề duy nhất đó là generator mà ta đang dùng không thể tạo thay đổi cần thiết trong tập tin **android/app/build.gradle,** do đó ta phải tự làm một cách thủ công:
 ```
 dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
