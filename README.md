@@ -4,7 +4,7 @@ This is instruction for creating a Android native library for React Native. For 
 
 # Step 1: Create a library
 
-Use the generator to create the library: [react-native-create-library] (https://github.com/frostney/react-native-create-library)
+Use the generator to create the library: [react-native-create-library](https://github.com/frostney/react-native-create-library)
 
 Install generator with command:
 
@@ -50,16 +50,16 @@ import java.util.Map;
     Toast.makeText(getReactApplicationContext(), message, duration).show();
   }
 ```
-** More advanced customization: **
+ **More advanced customization:**
 
-** You can rename the library ** (name when imported into React Native) by editing the following code in the RNMyFancyLibraryModule.java credentials:
+**You can rename the library** (name when imported into React Native) by editing the following code in the RNMyFancyLibraryModule.java credentials:
 ``` java
   @Override
   public String getName() {
     return "RNMyFancyLibrary";
   }
 ```
-** Can rename package when imported into java:
+**Can rename package when imported into java**:
 
 1. Change android / src / main / AndroidManifest.xml.
 
@@ -72,13 +72,13 @@ Create a repository and push it up normally. For example, I have uploaded at htt
 
 # Step 3: Install the library into React Native:
 
-1. Install from the gitgub link in step 2. **
+1. **Install from the gitgub link in step 2.**
 
 For example:
 
     npm install --save git+https://github.com/gitvani/ReactNativeMyFancyLibrary 
 
-2. ** Link library: **
+2. **Link library:**
 
 Use the command:
       react-native link
@@ -101,7 +101,7 @@ import com.reactlibrary.RNMyFancyLibraryPackage;
       );
     }
 ```
-The only problem is that the generator we are using can not make the necessary changes in the android / app / build.gradle file, ** so we have to do it manually:
+The only problem is that the generator we are using can not make the necessary changes in the android / app / build.gradle file, **so we have to do it manually:**
 ```
 dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
@@ -110,7 +110,7 @@ dependencies {
     compile project(':react-native-my-fancy-library') //new here
 }
 ```
-#Step 4: Build mobile app: 
+# Step 4: Build mobile app: 
 
 Editing in index.android.js:
 ``` javascript
@@ -135,6 +135,6 @@ Build again with command:
 
 
 
-#Reference: 
+# Reference: 
 http://cmichel.io/how-to-create-react-native-android-library/
 https://github.com/frostney/react-native-create-library
