@@ -1,6 +1,9 @@
 ![enter image description here](https://i.imgur.com/FCgIKGa.jpg)
 
-# create-native-lib-for-react
+> If you don't current libraries, you can create them by yourself with React Native 
+>  -- said by me 😜
+
+# About create-native-lib-for-react
 This is instruction for creating a **Android** native library for React Native. For Vietnamese, click [here](https://github.com/gitvani/create-native-lib-for-react/blob/master/readme.vi.md) .
 
 
@@ -12,7 +15,7 @@ Install generator with command:
 
     npm install -g react-native-create-library
 
-Create the directory structure, assuming you need to create a library named ** MyFancyLibrary **:
+Create the directory structure, assuming you need to create a library named **MyFancyLibrary**:
 
     react-native-create-library MyFancyLibrary
 
@@ -26,7 +29,11 @@ The two most important files are RNMyFancyLibraryModule.java (which contains all
       return Collections.emptyList();
      }
 ```
-To add native logic processing, we need to change the code in file RNMyFancyLibraryModule.java. For example: I need to create a library for React Native using `android.widget.Toast` to display the toast. I edited the file RNMyFancyLibraryModule.java as follows (refer to the full code at [here](https://github.com/gitvani/ReactNativeMyFancyLibrary/blob/master/android/src/main/java/com/reactlibrary/RNMyFancyLibraryModule.java) ): 
+To add native logic processing, we need to change the code in file RNMyFancyLibraryModule.java. For example: I need to create a library for React Native using `android.widget.Toast` to display the toast.
+
+![demo](https://i.imgur.com/C46pYvv.gif)
+
+I edited the file RNMyFancyLibraryModule.java as follows (refer to the full code at [here](https://github.com/gitvani/ReactNativeMyFancyLibrary/blob/master/android/src/main/java/com/reactlibrary/RNMyFancyLibraryModule.java) ): 
 ```java
 import android.widget.Toast;
 
@@ -63,7 +70,7 @@ import java.util.Map;
 ```
 **Can rename package when imported into java**:
 
-1. Change android / src / main / AndroidManifest.xml.
+1. Change android/src/main/AndroidManifest.xml.
 
 2. Rename the folders starting from android/src/main/java to match your package name.
 
@@ -83,6 +90,7 @@ For example:
 2. **Link library:**
 
 Use the command:
+
       react-native link
 
 By this way, some changes are made in the android directory files:
